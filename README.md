@@ -18,6 +18,8 @@ cp -R dse-writing-marker ~/.dsh/skills/
 
 輸出七節：GRADES、MARKING CRITERIA、QUESTION、WRITING STYLE、LINE-TO-LINE、諾貝爾級筆法、CONCLUSION。
 
+七節之下是六部分評語：評分表、詳細量表、排毒報告、逐句精煉、立意昇華、整體建議。
+
 ## 目錄
 
 | 檔案 | 用途 |
@@ -27,6 +29,9 @@ cp -R dse-writing-marker ~/.dsh/skills/
 | `reference/question.md` | 扣題：三根樁、設問、界定 |
 | `reference/material.md` | 選材：忘我、三問、減法 |
 | `reference/reflection.md` | 反思段：三段論、末段四檢 |
+| `reference/thesis.md` | 立意：三層、三問、封頂 63／71／103 |
+| `reference/purge.md` | 排毒：信息與節奏、十八條、六條待譯 |
+| `reference/frames.md` | 十個哲學框架與意象配對 |
 | `reference/style.md` | 文風：文白、句長、禁用清單 |
 | `reference/template.md` | 七節模板與勾選表 |
 | `reference/exemplars.md` | 好句壞句對照 |
@@ -42,18 +47,21 @@ cp -R dse-writing-marker ~/.dsh/skills/
 
 ## 設計原則
 
-1. 先給五項整數，後加權。不先想總分。
-2. 分數寧低半格，不可高估一格。
-3. 改寫以最小改動為限，信息守恒。
-4. 題眼不離，句長不失。
-5. 評語陳述，不推銷。
+1. 先判立意層次，再評分。層次定，總分上限即定：63、71、103。
+2. 先給五項整數，後加權。不先想總分。
+3. 分數寧低半格，不可高估一格。
+4. 改寫以最小改動為限，信息守恒。
+5. 題眼不離，句長不失。
+6. 刪句之前，先問是信息還是節奏。刪廢話是紀律，刪文學是無知。
+7. 評語陳述，不推銷。
 
 ## 版本
 
-0.2.0
+0.3.0
 
 ## 修改記
 
+- 0.3.0　立意先行：三層與封頂、三問、昇華三路；排毒十八條與信息節奏之界；十個哲學框架；六部分評語對應七節。SKILL.md 重寫為十一節，刪去比喻式說明。
 - 0.2.0　SKILL.md 改以散文行文，去電報體，句長復常；補「三種誤判」與語氣一節。
 - 0.1.0　初版：流程、錨點、扣題、選材、反思段、文風、模板、統計腳本。
 
