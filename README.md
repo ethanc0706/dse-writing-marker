@@ -1,0 +1,57 @@
+# dse-writing-marker
+
+HKDSE 中文卷二評卷 skill。給分、批改、逐句建議、全文改寫。
+
+## 安裝
+
+```bash
+cp -R dse-writing-marker ~/.dsh/skills/
+```
+
+重新開啟 session 後，skill 目錄即載入。
+
+## 用法
+
+把作文貼上，或給手稿 PDF。
+
+> 評一評這篇。題目：〈我曾覺得高中生涯十分迷茫，後來卻發現生活中的精彩〉
+
+輸出七節：GRADES、MARKING CRITERIA、QUESTION、WRITING STYLE、LINE-TO-LINE、諾貝爾級筆法、CONCLUSION。
+
+## 目錄
+
+| 檔案 | 用途 |
+|---|---|
+| `SKILL.md` | 主流程：開卷、評分、五問、逐句、改寫、輸出 |
+| `reference/rubric.md` | 評分機制、錨點、封頂、級界 |
+| `reference/question.md` | 扣題：三根樁、設問、界定 |
+| `reference/material.md` | 選材：忘我、三問、減法 |
+| `reference/reflection.md` | 反思段：三段論、末段四檢 |
+| `reference/style.md` | 文風：文白、句長、禁用清單 |
+| `reference/template.md` | 七節模板與勾選表 |
+| `reference/exemplars.md` | 好句壞句對照 |
+| `scripts/textstats.py` | 字數、句長、高頻字統計 |
+
+## 依據
+
+- 2023 評卷參考第 19–20 頁：五項權重、品第表、封頂、錯別字。
+- 2024 起評級標準：上品、中品、下品分項描述。
+- 2026 級界：5** 70%、5* 64%、5 61%、4 55%、3 48%、2 40%。
+
+錨點表為據上述材料所定，用於防止評分漂移。
+
+## 設計原則
+
+1. 先給五項整數，後加權。不先想總分。
+2. 分數寧低半格，不可高估一格。
+3. 改寫以最小改動為限，信息守恒。
+4. 題眼不離，句長不失。
+5. 評語陳述，不推銷。
+
+## 版本
+
+0.1.0
+
+## 授權
+
+MIT
