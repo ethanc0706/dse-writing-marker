@@ -29,6 +29,13 @@ def load(path: str) -> str:
     return Path(path).read_text(encoding="utf-8")
 
 
+def strip_markdown(text: str) -> str:
+    """Ignore fenced code and table rows, so a .md document is measured by prose."""
+    text = re.sub(r"```.*?```", "", text, flags=re.S)
+    lines = [ln for ln in text.splitlines() if not ln.strip().startswith("|")]
+    return "\n".join(lines)
+
+
 def analyse(text: str) -> dict:
     han = len(CJK.findall(text))
     parts = [s for s in SENT_SPLIT.split(text) if CJK.search(s)]
